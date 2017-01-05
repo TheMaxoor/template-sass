@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-/assets/vendor
-/app/css
-/app/js
-/node_modules
-=======
+assets/vendor
+app/css
+app/js
 # Logs
 logs
 *.log
@@ -41,4 +38,4 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
->>>>>>> 5562d4897dc717fba8d66cce47096361b0ebda06
+
