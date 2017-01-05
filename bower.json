@@ -1,0 +1,27 @@
+{
+  "name": "template-sass",
+  "authors": [
+    "Maxime Rossignol <contact@mrossignol.fr>"
+  ],
+  "description": "A simple personnal template",
+  "main": "",
+  "keywords": [
+    "gulp",
+    "sass",
+    "template"
+  ],
+  "license": "MIT",
+  "homepage": "./web/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7"
+  }
+}
