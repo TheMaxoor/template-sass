@@ -11,7 +11,7 @@
     "template"
   ],
   "license": "MIT",
-  "homepage": "./app/index.html",
+  "homepage": "./html/index.html",
   "ignore": [
     "**/.*",
     "node_modules",

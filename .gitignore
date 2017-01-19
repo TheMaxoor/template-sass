@@ -1,6 +1,6 @@
 assets/vendor
-app/css
-app/js
+html/css
+html/js
 # Logs
 logs
 *.log

@@ -15,7 +15,7 @@ gulp.task('sass', function () {
     .pipe(rename(function(path){
       path.basename += ".min";
     }))
-    .pipe(gulp.dest('./app/css'))
+    .pipe(gulp.dest('./html/css'))
     .pipe(livereload());
 });
 
@@ -28,7 +28,7 @@ gulp.task('js', function (){
         noSource: true,
         ignoreFiles: ['.min.js']
     }))
-    .pipe(gulp.dest('./app/js'))
+    .pipe(gulp.dest('./html/js'))
 })
 
 gulp.task('sass:watch', function () {
