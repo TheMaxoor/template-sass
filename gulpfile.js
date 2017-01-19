@@ -6,6 +6,7 @@ var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var minify = require('gulp-minify');
 var gutil = require('gulp-util');
+var livereload = require('gulp-livereload');
  
 gulp.task('sass', function () {
   return gulp.src('./assets/sass/main.scss')
@@ -14,7 +15,8 @@ gulp.task('sass', function () {
     .pipe(rename(function(path){
       path.basename += ".min";
     }))
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./app/css'))
+    .pipe(livereload());
 });
 
 gulp.task('js', function (){
@@ -30,7 +32,8 @@ gulp.task('js', function (){
 })
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  livereload.listen();
+  gulp.watch('./assets/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('build', ['sass', 'js'], function() {
